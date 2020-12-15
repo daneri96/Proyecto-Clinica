@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Trabaja con nosotros</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../sass/trabajaNosotros/css/trabaja.css" />
+</head>
+
+<body>
+    <!--Contenedor de la página -->
+    <div id="contenedor">
+
+        <!-- Cabecera de la página -->
+        <header id="cabecera" class="row">
+
+            <div id="logo" class="col-4">
+                <img title="logo" src="../../img/logo.png" alt="logo de clinica" />
+                <p class="mr-4">animals clinic</p>
+                <div class="clearfix"></div>
+            </div>
+
+
+
+            <nav id="menu" class="col-6 ml-4">
+                <ul>
+                    <li><a href="../../html/index.html">inicio</a></li>
+                    <li><a href="#">servicios</a></li>
+                    <li><a href="#">ventas</a></li>
+                    <li><a href="../../html/login/login.html">login</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+
+        <!--Futuro slider-->
+        <div id="slider">
+            <div class="galeria">
+                <img src="../../img/slider.jpg" title="slide" />
+            </div>
+        </div>
+
+        <!-- Trabaja con nosotros -->
+
+        <section id="seccion" class=" mt-3 mb-2 ">
+            <h2 class="text-center">¿Quiere formar parte de nuestro proyecto?</h2>
+            <p class="mt-3 pd-2 pl-2 text-center ">
+                En nuestro equipo buscamos personas comprometidas, con ganas de aprender y de desarrollar su carrera profesional con nosotrs tanto en los diferentes departamentos de las Oficinas Centrales como en nuestras Tiendas repartidas por todo el territorio nacional.
+                Si deseas trabajar con nosostros rellena el formulario que mostramos a continuación.
+            </p>
+
+            <form class="pl-5 pb-3">
+                <div class="form-group">
+                    <label for="nombre">Ingrese su nombre:(*)</label>
+                    <input autofocus type="text" required pattern="/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/" title="Introduzca bien su nombre" class="form-control" id="nombre" name="nombre">
+                    <small class "form-text text-muted">No ingrese espacios en blanco.</small>
+                </div>
+                <div class="form-group">
+                    <label for="clave">Ingrese su correo:(*)</label>
+                    <input type="email" required pattern="/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i" title="Introduzca el correo correctamente" class="form-control" id="clave" name="clave">
+                    <small class "form-text text-muted">Debe tener al menos 10 caracteres, de los cuales al menos uno debe ser un número.</small>
+                </div>
+                <div class="form-group">
+                    <label for="clave">Ingrese su url de linkedlin:</label>
+                    <input type="password" class="form-control" id="clave" name="clave">
+                    <small class "form-text text-muted">Debe tener al menos 10 caracteres, de los cuales al menos uno debe ser un número.</small>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="comentarios">Escriba aquí su carta de presentación si lo desea:</label>
+                    <textarea class="form-control" rows="5" id="comentarios" name="comentarios"></textarea>
+                </div>
+
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox1" name="checkbox1">
+                    <label class="form-check-label" for="checkbox1">
+                      Acepta términos y condiciones
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+
+        </section>
+
+
+
+        <!--Pie de la página-->
+        <footer id="pie">
+            <div class="layout">
+                <div class="mipie">
+                    <p id="logito">animals clinic</p>
+                </div>
+                <div class="mipie">
+                    <h2>datos de contacto</h2>
+                    <p><span><img src="../../img/link.png"/><span><a href="">www.animalclinc.es</a></p>
+      <p><span><img src="../../img/telefono2.png"/><span>956 87 45 22</p>
+      <p><span><img src="../../img/telefono2.png"/><span>693 33 44 32 (Urgencias 24 horas)</p>
+     
+    </div>
+    <div class="mipie">
+      <h2>horario</h2>
+      <p>De <strong>Lunes</strong> a <strong>Viernes:</strong></p>
+      <p> de 9:00 a 21:00</p>
+      <p><strong>Sábados</strong></p>
+      <p>de 9:00 a 14:00</p>
+      <p>Urgencias las 24 horas</p>
+    </div>
+    <div class="mipie">
+      <h2>Información</h2>
+      <p><a href="../Newsletter/newsletter.html">Newsletter</a></p>
+      <p><a href="../nosotros/nosotros.html">Sobre nosotros</a></p>
+      <p><a href="../trabajaNosotros/trabaja.html">Trabaja con nosotros</a></p>
+    </div>
+  </div>
+</footer>
+
+
+
+    </div>
+    <script type="text/javascript " src="../../jquery/jquery-3.5.1.min.js "></script>
+    <script type="text/javascript " src="../../bootstrap/css/bootstrap.min.js "></script>
+</body>
+
+</html>
