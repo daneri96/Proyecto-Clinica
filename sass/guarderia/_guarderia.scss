@@ -1,0 +1,49 @@
+#guarderia {
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .layout {
+        margin-top: 1em;
+        // margin-bottom: 1em;
+        display: flex;
+        justify-content: space-around;
+    }
+    .carousel {
+        //margin-bottom: 3em;
+        img {
+            height: 400px;
+        }
+    }
+    //informacion de la guarderia
+    #informacion {
+        border-top: 2px solid #ccc;
+        background-color: #ECEFF1;
+        h5 {
+            text-align: center;
+            color: gray;
+            margin-bottom: 1em;
+            padding-top: 2em;
+        }
+        .card {
+            height: 422px;
+            margin-bottom: 2em;
+        }
+    }
+    //intereses que saber
+    #intereses {
+        background-color: #2BADC1;
+        padding-top: 1em;
+        .card {
+            img {
+                height: 170px;
+            }
+            .card-body {
+                a {
+                    margin-left: 4em;
+                    margin-top: 2em;
+                }
+            }
+        }
+    }
+}

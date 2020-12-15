@@ -1,0 +1,176 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background-color: white;
+}
+header #logo {
+  width: 25%;
+}
+header #logo img {
+  width: 40%;
+  background-color: white;
+}
+header #logo p {
+  float: right;
+  line-height: 105px;
+  font-family: Verdana, Helvetica, Arial;
+  text-transform: uppercase;
+  padding-right: 2em;
+  font-size: 1.3em;
+  color: #0AC9C9;
+}
+header #menu {
+  line-height: 104px;
+  width: 60%;
+  text-align: right;
+}
+header #menu ul li {
+  display: inline-block;
+}
+header #menu ul li a {
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #0AC9C9;
+}
+
+#slider .galeria img {
+  width: 100%;
+}
+
+#log {
+  padding-top: 5em;
+  padding-left: 15em;
+  padding-bottom: 3em;
+  background-color: #F7F7F7;
+}
+#log #sesion {
+  width: 50%;
+  height: 26em;
+  margin-right: 5em;
+  background-color: blue;
+}
+#log #sesion h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+#log #sesion p {
+  color: white;
+  font-size: 0.9em;
+}
+#log #sesion input[type=password] {
+  color: white;
+  background-color: blue;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+#log #sesion input[type=email] {
+  color: white;
+  background-color: blue;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+#log #sesion button {
+  border-radius: 1.5em/50%;
+}
+#log #sesion button img {
+  height: 1.1em;
+  margin-top: 4px;
+}
+#log #sesion #face {
+  background-color: #006BE4;
+  text-transform: uppercase;
+  border: #006BE4;
+}
+#log #sesion #google {
+  background-color: #E2370F;
+  border: #E2370F;
+  text-transform: uppercase;
+  color: white;
+}
+#log #sesion #twi {
+  text-transform: uppercase;
+  color: white;
+}
+#log #registro {
+  width: 50%;
+  height: 26em;
+  margin-left: 5em;
+  background-color: blue;
+}
+#log #registro h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+#log #registro ul {
+  text-align: center;
+}
+#log #registro ul li {
+  color: white;
+  list-style: none;
+  margin-top: 2em;
+}
+#log #registro button {
+  border-radius: 1.5em/50%;
+  margin-left: 7em;
+  margin-top: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+#pie {
+  background-color: #61A60E;
+  margin-top: 0.2em;
+}
+#pie .layout {
+  display: flex;
+}
+#pie .layout .mipie {
+  margin: 0 auto;
+}
+#pie .layout .mipie #logito {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: white;
+  text-shadow: 0px 0px 1px white;
+  padding-top: 1em;
+}
+#pie .layout .mipie h2 {
+  text-transform: uppercase;
+  color: white;
+  border-bottom: 0.1em solid white;
+  margin-bottom: 1.1em;
+  padding-top: 1em;
+}
+#pie .layout .mipie p {
+  color: white;
+  margin: 1em;
+}
+#pie .layout .mipie p span img {
+  height: 1em;
+  margin-right: 0.4em;
+}
+#pie .layout .mipie p a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=login.css.map */

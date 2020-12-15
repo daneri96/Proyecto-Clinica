@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background-color: white;
+}
+header #logo {
+  width: 25%;
+}
+header #logo img {
+  width: 40%;
+  background-color: white;
+}
+header #logo p {
+  float: right;
+  line-height: 89px;
+  font-family: Verdana, Helvetica, Arial;
+  text-transform: uppercase;
+  padding-right: 1em;
+  font-size: 1.3em;
+  color: #0AC9C9;
+}
+header #menu {
+  line-height: 93px;
+  width: 60%;
+  text-align: right;
+}
+header #menu ul li {
+  display: inline-block;
+}
+header #menu ul li a {
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #0AC9C9;
+}
+
+#slider .galeria img {
+  width: 100%;
+}
+
+#guarderia h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+#guarderia .layout {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+#guarderia .carousel img {
+  height: 400px;
+}
+#guarderia #informacion {
+  border-top: 2px solid #ccc;
+  background-color: #ECEFF1;
+}
+#guarderia #informacion h5 {
+  text-align: center;
+  color: gray;
+  margin-bottom: 1em;
+  padding-top: 2em;
+}
+#guarderia #informacion .card {
+  height: 422px;
+  margin-bottom: 2em;
+}
+#guarderia #intereses {
+  background-color: #2BADC1;
+  padding-top: 1em;
+}
+#guarderia #intereses .card img {
+  height: 170px;
+}
+#guarderia #intereses .card .card-body a {
+  margin-left: 4em;
+  margin-top: 2em;
+}
+
+/*# sourceMappingURL=guarderia.css.map */

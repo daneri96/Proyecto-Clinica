@@ -1,0 +1,42 @@
+@import 'variables';
+//higiene
+#info_pelu {
+    #higiene {
+        margin-top: 4em;
+        margin-left: 2em;
+        img {
+            border-radius: 33%;
+            margin-left: 2em;
+            height: 272px;
+            width: 407px;
+        }
+    }
+    //clase informacion
+    .informacion {
+        margin-left: 3em;
+        h3 {
+            font-family: $fuente-texto;
+            color: purple;
+            text-transform: uppercase;
+            border-bottom: 1px solid yellowgreen;
+            margin-right: 11em;
+            padding-bottom: 0.3em;
+        }
+        p {
+            font-family: $fuente-texto;
+            font-size: 0.9em;
+        }
+    }
+    //arreglos
+    #arreglos {
+        margin-top: 4em;
+        margin-left: 2em;
+        margin-bottom: 5em;
+        img {
+            border-radius: 33%;
+            margin-left: 2em;
+            height: 272px;
+            width: 407px;
+        }
+    }
+}
