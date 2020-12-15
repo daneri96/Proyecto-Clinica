@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background-color: white;
+}
+header #logo {
+  width: 25%;
+}
+header #logo img {
+  width: 40%;
+  background-color: white;
+}
+header #logo p {
+  float: right;
+  line-height: 89px;
+  font-family: Verdana, Helvetica, Arial;
+  text-transform: uppercase;
+  padding-right: 1em;
+  font-size: 1.3em;
+  color: #0AC9C9;
+}
+header #menu {
+  line-height: 93px;
+  width: 60%;
+  text-align: right;
+}
+header #menu ul li {
+  display: inline-block;
+}
+header #menu ul li a {
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #0AC9C9;
+}
+
+#slider .galeria img {
+  width: 100%;
+}
+
+#pie {
+  background-color: #61A60E;
+  margin-top: 1.2em;
+}
+#pie .layout {
+  display: flex;
+}
+#pie .layout .mipie {
+  margin: 0 auto;
+}
+#pie .layout .mipie #logito {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: white;
+  text-shadow: 0px 0px 1px white;
+  padding-top: 1em;
+}
+#pie .layout .mipie h2 {
+  text-transform: uppercase;
+  color: white;
+  border-bottom: 0.1em solid white;
+  margin-bottom: 1.1em;
+  padding-top: 1em;
+}
+#pie .layout .mipie p {
+  color: white;
+  margin: 1em;
+}
+#pie .layout .mipie p span img {
+  height: 1em;
+  margin-right: 0.4em;
+}
+#pie .layout .mipie p a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=nosotros.css.map */

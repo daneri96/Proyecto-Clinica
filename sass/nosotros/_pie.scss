@@ -1,0 +1,39 @@
+#pie {
+    background-color: #61A60E;
+    margin-top: 1.2em;
+    .layout {
+        display: flex;
+        .mipie {
+            margin: 0 auto;
+            #logito {
+                font-size: 2em;
+                text-transform: uppercase;
+                font-family: Verdana, Tahoma, sans-serif;
+                color: white;
+                text-shadow: 0px 0px 1px white;
+                padding-top: 1em;
+            }
+            h2 {
+                text-transform: uppercase;
+                color: white;
+                border-bottom: 0.1em solid white;
+                margin-bottom: 1.1em;
+                padding-top: 1em;
+            }
+            p {
+                color: white;
+                margin: 1em;
+                span {
+                    img {
+                        height: 1em;
+                        margin-right: 0.4em;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
