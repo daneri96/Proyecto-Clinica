@@ -1,0 +1,66 @@
+@import 'variables';
+#blog {
+    margin-top: 2em;
+    background-color: #F7F7F7;
+    #seccion {
+        padding-top: 40px;
+        width: 100%;
+        text-align: center;
+        h2 {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: $color-titulo;
+            border-bottom: 4px solid salmon;
+        }
+        p {
+            color: $color-texto;
+            text-align: center;
+            padding-left: 139px;
+            padding-top: 30px;
+            padding-right: 100px;
+        }
+    }
+    .layout {
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        .articulos {
+            background-color: white;
+            margin-right: 100px;
+            margin-left: 60px;
+            width: 35%;
+            height: 500px;
+            border: 0.5px solid #ccc;
+            img {
+                width: 100%;
+                height: 40%;
+                padding-bottom: 5px;
+            }
+            h2 {
+                color: $color-titulo;
+                font-size: 1.2em;
+                padding-top: 5px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            p {
+                color: $color-texto;
+                padding-top: 5px;
+                text-align: justify;
+                margin-right: 8px;
+                margin-left: 8px;
+                padding-bottom: 90px;
+            }
+            span {
+                padding-top: 5px;
+                text-align: center;
+                a {
+                    color: purple;
+                    text-decoration: none;
+                    margin-left: 7px;
+                }
+            }
+        }
+    }
+}

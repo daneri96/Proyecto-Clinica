@@ -1,0 +1,156 @@
+@import 'variables';
+//métodos
+@mixin textoLetra($color, $size-letra) {
+    font-size: $size-letra;
+    color: $color;
+}
+
+@mixin gestionAnchuraAltura($ancho, $altura) {
+    width: $ancho;
+    height: $altura;
+}
+
+//herencias de los servicios 
+%titulo-servicios {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    color: $color-titulo;
+}
+
+%imagenes-servicios {
+    border-radius: 50%;
+    width: 150px;
+    float: left;
+    line-height: 15px;
+    padding-right: 20px;
+}
+
+%parrafo-servicios {
+    display: block;
+    text-align: justify;
+    padding-bottom: 20px;
+    margin-right: 15px;
+    color: $color-texto;
+}
+
+//estilos universales
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: $fuente-texto;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+//nuestros servicios
+#contenido {
+    #informacion {
+        background-color: $fondo;
+        h2 {
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 10px;
+            color: #3B3D42;
+        }
+        p {
+            text-align: center;
+            padding-left: 200px;
+            padding-right: 200px;
+            color: #5D5D5D;
+        }
+    }
+    //preparación para mostrar los servicios de forma visual
+    #servicios {
+        display: flex;
+        height: 157px;
+        .variaciones {
+            margin-top: 60px;
+            margin-left: 95px;
+            @include gestionAnchuraAltura(35%, 100%);
+            h3 {
+                @extend %titulo-servicios;
+            }
+            img {
+                @extend %imagenes-servicios;
+            }
+            p {
+                @extend %parrafo-servicios;
+            }
+            span {
+                margin-left: 61px;
+                a {
+                    text-decoration: none;
+                }
+            }
+            span a:hover {
+                text-decoration: underline;
+            }
+            #cirujia {
+                margin-left: 275px;
+            }
+        }
+    }
+    //2 servicios de clinica
+    #hospital {
+        display: flex;
+        padding-top: 20px;
+        .variaciones {
+            margin-top: 60px;
+            margin-left: 88px;
+            width: 37%;
+            height: 100%;
+            h3 {
+                @extend %titulo-servicios;
+            }
+            img {
+                @extend %imagenes-servicios;
+            }
+            p {
+                @extend %parrafo-servicios;
+            }
+            span {
+                margin-left: 61px;
+                a {
+                    text-decoration: none;
+                }
+            }
+            span a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    //2 servicios de clinica
+    #alimentacion {
+        display: flex;
+        padding-top: 20px;
+        .variaciones {
+            margin-top: 60px;
+            margin-left: 88px;
+            width: 37%;
+            height: 100%;
+            h3 {
+                @extend %titulo-servicios;
+            }
+            img {
+                @extend %imagenes-servicios;
+            }
+            p {
+                @extend %parrafo-servicios;
+            }
+            span {
+                margin-left: 94px;
+                a {
+                    text-decoration: none;
+                }
+            }
+            span a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

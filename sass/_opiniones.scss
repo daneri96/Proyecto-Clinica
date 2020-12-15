@@ -1,0 +1,72 @@
+    @import 'variables';
+    #opinion {
+        background-color: white;
+        #clientes {
+            padding-top: 40px;
+            width: 100%;
+            text-align: center;
+            h2 {
+                padding-top: 20px;
+                padding-bottom: 10px;
+                text-align: center;
+                color: $color-titulo;
+                border-bottom: 4px solid salmon;
+            }
+            p {
+                color: $color-texto;
+                text-align: center;
+                padding-left: 139px;
+                padding-top: 30px;
+                padding-right: 100px;
+            }
+        }
+        .layout {
+            display: flex;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            text-align: justify;
+            .opinion {
+                width: 30%;
+                height: 30%;
+                margin-left: 1.1em;
+                margin-right: 1em;
+                padding-right: 1.3em;
+                padding-left: 1em;
+                padding-top: 1em;
+                padding-bottom: 0.5em;
+                background-color: white;
+                border: 0.5px solid #ccc;
+                h2 {
+                    color: $color-titulo;
+                    font-size: 1.2em;
+                    padding-top: 5px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+                article {
+                    color: $color-texto;
+                }
+                p {
+                    color: purple;
+                    text-align: right;
+                }
+            }
+        }
+        #miboton {
+            padding-top: 3em;
+            padding-bottom: 3em;
+            text-align: center;
+            button {
+                padding-left: 5em;
+                padding-right: 5em;
+                padding-bottom: 0.2em;
+                padding-top: 0.2em;
+                background-color: purple;
+                border: 0.5px solid purple;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
