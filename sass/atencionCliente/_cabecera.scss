@@ -1,0 +1,64 @@
+@import 'variables';
+//cabecera
+@mixin textoLetra($color, $size-letra) {
+    font-size: $size-letra;
+    color: $color;
+}
+
+//estilos universales
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+//cabecera
+header {
+    width: 100%;
+    display: flex;
+    background-color: $fondo;
+    #logo {
+        width: 25%;
+        img {
+            width: 40%;
+            background-color: white;
+        }
+        p {
+            float: right;
+            line-height: 89px;
+            font-family: $fuente-texto;
+            text-transform: uppercase;
+            padding-right: 1em;
+            @include textoLetra($color-cabecera, 1.3em);
+        }
+    }
+    //menu de la cabecera
+    #menu {
+        line-height: 93px;
+        width: 60%;
+        text-align: right;
+        ul {
+            li {
+                display: inline-block;
+                a {
+                    text-transform: uppercase;
+                    padding: 10px;
+                    text-decoration: none;
+                    @include textoLetra($color-cabecera, 1.2em);
+                }
+            }
+        }
+    }
+}
+
+//Imagen de atencion al cliente
+#imagen{
+    img{
+        width: 1349px;
+        height: 350px;
+    }
+}

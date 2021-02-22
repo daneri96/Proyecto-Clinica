@@ -1,0 +1,32 @@
+//iconos de clientes
+
+#seccion{
+  width: 100%;
+  .layout{
+    display: flex;
+  }
+  #imagenes{
+    img{
+      width: 15%;
+      margin-left: 13em;
+      margin-right: 10em;
+    }
+    h4{
+     margin-left: 6em;
+    }
+  }
+  #icono{
+   
+    img{
+      width: 20%;
+      margin-left: 12em;
+    }
+    h4{
+      margin-left: 7em;
+    }
+  }
+}
+//formulario de cliente
+#formulario{
+  margin-right: 51em;
+}
