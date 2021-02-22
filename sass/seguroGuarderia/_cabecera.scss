@@ -56,11 +56,47 @@ header {
 }
 
 //slider
-#slider {
-    .galeria {
-        img {
-            width: 100%;
+#portada {
+    img {
+        width: 1349px;
+    }
+    #info {
+        position: absolute;
+        top: 15em;
+        //left: 53em;
+        margin-left: 1em;
+        p {
+            font-size: 1.1em;
+            text-align: justify;
+            margin-right: 47em;
         }
+    }
+}
+
+#garantia {
+    h2 {
+        border-bottom: 2px solid #ccc;
+        margin-left: 5em;
+        margin-right: 5em;
+        padding-bottom: 1em;
+        font-weight: bold;
+    }
+    p {
+        margin-left: 10em;
+        margin-right: 10em;
+        margin-top: 1em;
+    }
+}
+
+.cubrirOno {
+    h3 {
+        margin-left: 5em;
+        margin-right: 5em;
+        font-weight: bold;
+    }
+    ul {
+        margin-left: 10em;
+        margin-right: 10em;
     }
 }
 
@@ -114,4 +150,24 @@ header {
             }
         }
     }
+    #portada {
+        img {
+            height: 400px;
+            width: 1046px;
+        }
+        #info {
+            position: absolute;
+            top: 7em;
+            left: 1em;
+            margin-right: 6em;
+           
+            p {
+                font-size: 1.1em;
+                text-align: justify;
+                margin-right: 4em;
+            }
+        }
+    }
 }
+
+

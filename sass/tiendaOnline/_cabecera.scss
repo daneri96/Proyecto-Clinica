@@ -1,0 +1,107 @@
+@import 'variables';
+//cabecera
+@mixin textoLetra($color, $size-letra) {
+    font-size: $size-letra;
+    color: $color;
+}
+
+//estilos universales
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+//cabecera
+header{
+    #cabecera{
+        margin-top: 0.3em;
+        ul{
+            text-decoration: none;
+            margin-left: 6em;
+            li{
+                display: inline-block;
+                padding:1em;
+                margin:0.1em;
+                cursor:pointer;
+                #color{
+                    color:green;
+                }
+                input[type="text"]{
+                    margin-right: 3.5em;
+                    padding-right: 3em;
+                }
+            }
+            
+        }
+    }
+    .menu{
+       ul{
+           text-decoration: none;
+           padding-left: 6.7em;
+           background-color: #48423D;
+           padding:0.6em;
+           li{
+               display: inline-block;
+               cursor:pointer;
+               a{
+                   text-transform: uppercase;
+                   margin-right: 2em;
+                   text-decoration: none;
+                   color:white;
+                   padding:0.9em;
+                //iconos
+                .color-icon{
+                    margin-top:-0.9em;
+                } 
+            
+               }
+               //efectos
+               a:hover{
+                   color:black;
+                   background-color: white;
+               }
+           }
+       } 
+    }
+    //menu desplegable
+    .menu > ul > li > ul{
+        display: none;
+        position: absolute;
+        color:black;
+        text-align: left;
+        width: 180px;
+        z-index: 1;
+    }
+    .menu > ul > li:hover > ul{
+        display: block;
+    }
+    .menu > ul > li:hover > ul >li{
+        display: block;
+        background-color: #f2f1f0;
+        border-bottom: 1px solid #d6d6d6;
+        padding: 8px;
+        line-height: 25px;
+        font-size: 13px;
+
+        a{
+            color:black;
+            padding:0.9em;
+            text-align: justify;
+            font-size:0.9em;
+        }
+    }
+}
+
+//slider
+.carousel-item{
+    img{
+        width: 1350px;
+        height: 350px;
+        margin-top: 1.5em;
+    }
+}

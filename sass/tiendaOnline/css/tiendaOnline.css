@@ -1,0 +1,110 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+header #cabecera {
+  margin-top: 0.3em;
+}
+header #cabecera ul {
+  text-decoration: none;
+  margin-left: 6em;
+}
+header #cabecera ul li {
+  display: inline-block;
+  padding: 1em;
+  margin: 0.1em;
+  cursor: pointer;
+}
+header #cabecera ul li #color {
+  color: green;
+}
+header #cabecera ul li input[type=text] {
+  margin-right: 3.5em;
+  padding-right: 3em;
+}
+header .menu ul {
+  text-decoration: none;
+  padding-left: 6.7em;
+  background-color: #48423D;
+  padding: 0.6em;
+}
+header .menu ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+header .menu ul li a {
+  text-transform: uppercase;
+  margin-right: 2em;
+  text-decoration: none;
+  color: white;
+  padding: 0.9em;
+}
+header .menu ul li a .color-icon {
+  margin-top: -0.9em;
+}
+header .menu ul li a:hover {
+  color: black;
+  background-color: white;
+}
+header .menu > ul > li > ul {
+  display: none;
+  position: absolute;
+  color: black;
+  text-align: left;
+  width: 180px;
+  z-index: 1;
+}
+header .menu > ul > li:hover > ul {
+  display: block;
+}
+header .menu > ul > li:hover > ul > li {
+  display: block;
+  background-color: #f2f1f0;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 8px;
+  line-height: 25px;
+  font-size: 13px;
+}
+header .menu > ul > li:hover > ul > li a {
+  color: black;
+  padding: 0.9em;
+  text-align: justify;
+  font-size: 0.9em;
+}
+
+.carousel-item img {
+  width: 1350px;
+  height: 350px;
+  margin-top: 1.5em;
+}
+
+#cuerpo {
+  width: 100%;
+}
+#cuerpo #seguro {
+  width: 85%;
+  margin-top: 2.2em;
+  margin-left: 11.5em;
+  padding-left: 5em;
+  background-color: #F6F6F7;
+}
+#cuerpo #seguro ul {
+  text-align: center;
+}
+#cuerpo #seguro ul li {
+  list-style: none;
+}
+#cuerpo #seguro ul li p .color-span {
+  color: #CC51AC;
+}
+#cuerpo h3 {
+  color: #CC51AC;
+}
+
+/*# sourceMappingURL=tiendaOnline.css.map */

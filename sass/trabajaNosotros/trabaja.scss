@@ -4,3 +4,49 @@
         padding-right: 40em;
     }
 }
+//formulario para la tablet mejorable
+@media only screen and(max-width:768px){
+    //formulario
+    #seccion{
+        form {
+            margin-top: 2em; 
+            
+            .form-group label{
+                margin-right: 2em;
+            }
+
+           .form-group{
+                label{
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    text-align: left;
+                }
+          
+                input[type=text],[type=email]{
+                    padding-right: 30em;
+                    
+                }
+                textarea{
+                    padding-right: 30em;
+                }
+                small{
+                    position: absolute;
+                    left: 4em;
+                    margin-top: 1em;
+                    margin-bottom: 2em;
+                    padding-bottom: 3em;
+                }
+                span{
+                    position: absolute;
+                    left: 26em;
+                }
+               
+           }
+           
+          button{
+              margin-top: 1em;
+          } 
+        }
+    }
+    
+}
