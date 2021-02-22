@@ -5,27 +5,27 @@
 <head>
     <meta charset="utf-8" />
     <title>Página de inicio</title>
-    <link rel="stylesheet" type="text/css" href="../sass/css/style.css" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../sass/index/css/style.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
 </head>
 
 <body>
 
     <!--Contenedor de la página -->
     <div id="contenedor">
+        <!--encabezado-->
+        <header id="cabecera" class="row">
 
-        <!-- Cabecera de la página -->
-        <header id="cabecera">
-
-            <div id="logo">
+            <div id="logo" class="col-4">
                 <img title="logo" src="../img/logo.png" alt="logo de clinica" />
-                <p>animals clinic</p>
+                <p class="mr-4">animals clinic</p>
                 <div class="clearfix"></div>
             </div>
 
 
 
-            <nav id="menu">
+            <nav id="menu" class="col-6 ml-4">
                 <ul>
                     <li><a href="index.html">inicio</a></li>
                     <li><a href="../html/servicios/servicios.html">servicios</a></li>
@@ -34,93 +34,110 @@
                 </ul>
             </nav>
 
+           
+
         </header>
 
-
-
-        <!--Futuro slider-->
-        <div id="slider">
-            <div class="galeria">
-                <img src="../img/slider.jpg" title="slide" />
+        
+        <!--Slider-->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/slider.jpg" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/slide6.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/slide5.jpg" class="d-block w-100" alt="...">
+                </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
 
-        <!--Nuestros servicios-->
-
-
         <section id="contenido">
-
             <!--Información de forma textual-->
+
             <div id="informacion">
                 <h2>Nuestros servicios</h2>
                 <p>Animals clinic es un centro veterinario que se encuentra en Cádiz y cuenta con el mayor equipamiento de última generación y los profesionales más cualificados. Nuestra filosofía es simple pero sólida: fomentar la prevención y hacer la
                     medicina de calidad basada en la ética, la comunicación y trato cercano a los clientes. Disponemos de una peluquería una guarderia para dejar a tus mascotas cuando tenga que irse de viajes y una tienda especializada para todos los
                     productos necesarios para sus mascotas.
                 </p>
+                <audio src="./Manuel Carrasco - Qué Bonito Es Querer (Video Oficial).m4a" controls="controls" autoplay></audio>
             </div>
 
-            <!-- Servicios de la clinicia-->
-            <div id="servicios">
+            <!-- Servicios de la clinica-->
 
+            <div id="servicios">
                 <!--  2 Servicios de la clinicia-->
                 <div class="variaciones">
-                    <img src="../img/cirujia.jpg" title="cirujia" alt="imagen de cirujia canina" />
-                    <h3>Cirujia veterinaria</h3>
-                    <p>
-                        Quirófano totalmente equipado con la última tecnología para realizar las cirugías necesarias para las mascotas las 24 horas.
+                    <img src="../img/ambulancia.jpg" title="urgencias" alt="urgencia veterinaria" />
+                    <h4>Urgencias Veterinarias 24/7</h4>
+                    <p style="font-size: 0.9em;">
+                        Sabemos que la salud no tiene horarios por lo que siempre estaremos ahí cuando lo necesites, servicio de urgencias veterinarias 24 horas durante los 7 días de las semana.
                     </p>
-                    <span id="cirujia"><a href="../html/infoCirujia/cirujia.html">Más información sobre cirujia</a></span>
+                    <span><a href="../html/infoCirujia/cirujia.html">Más información sobre urgencias 24/7</a></span>
+
+
                 </div>
 
                 <div class="variaciones">
                     <img src="../img/peluqueria.jpg" title="peluqueria" alt="imagen de peluqueria canina" />
-                    <h3>Peluqueria canina y felina</h3>
-                    <p>
+                    <h4>Peluqueria canina y felina</h4>
+                    <p style="font-size: 0.9em;">
                         Peluquería canina y felina donde realizamos servicios de belleza e higiene y tratamientos (lavado y corte para mascotas, arreglos de peluquería, cortes de raza, stripping).
                     </p>
                     <span id="peluqueria"><a href="../html/infoPelu/infoPelu.html">Más información sobre peluquería</a></span>
                 </div>
+
             </div>
 
-            <div id="hospital">
+            <div id="hospital" style="padding-top: 35px;">
                 <!--  2 Servicios de la clinicia-->
+                <div class="variaciones ">
+                    <img src="../img/cirujia.jpg" title="cirujia" alt="imagen de cirujia canina" />
+                    <h4 class="mb-1">Cirujia veterinaria</h4>
+                    <p class=mb-1 style="font-size: 0.8em;">
+                        Peluquería canina y felina donde realizamos servicios de belleza e higiene y tratamientos (lavado y corte para mascotas, arreglos de peluquería, cortes de raza, stripping).
+                    </p>
+                    <span id="cirujia"><a style="margin-left: 1em;" href="../html/infoCirujia/cirujia.html">Más información sobre cirujia</a></span>
+                </div>
+
                 <div class="variaciones">
                     <img src="../img/hospital.png" title="hospital" alt="imagen de hospital canino" />
-                    <h3>Hospitalización 24 horas</h3>
-                    <p>
+                    <h4>Hospitalización 24 horas</h4>
+                    <p style="font-size: 0.8em;">
                         Zona habilitada para la hospitalización de mascotas, para ingresar animales enfermos por diferentes causas, convalecientes o recién operados las 24 horas.
                     </p>
                     <span><a href="../html/infoCirujia/cirujia.html">Más información sobre hospitalización</a></span>
                 </div>
-                <div class="variaciones">
-                    <img src="../img/ambulancia.jpg" title="urgencias" alt="urgencia veterinaria" />
-                    <h3>Urgencias Veterinarias 24/7</h3>
-                    <p>
-                        Sabemos que la salud no tiene horarios por lo que siempre estaremos ahí cuando lo necesites, servicio de urgencias veterinarias 24 horas durante los 7 días de las semana.
-                    </p>
-                    <span><a href="../html/infoCirujia/cirujia.html">Más información sobre urgencias 24/7</a></span>
-                </div>
-
             </div>
 
+
             <div id="alimentacion">
-                <!--  2 Servicios de la clinicia-->
                 <div class="variaciones">
                     <img src="../img/alimentacion.png" title="alimentacion" alt="productos de alimentacion" />
-                    <h3>Alimentación para mascotas</h3>
-                    <p>
+                    <h4>Alimentación para mascotas</h4>
+                    <p style="font-size: 0.8em;">
                         Gran variedad de piensos y alimentos para mascotas siempre al mejor precio, si necesita alguno en particular sólo tiene que solicitarlo.
                     </p>
-                    <span><a href="../html/infoAlimentacion/alimentacion.html">Más información sobre alimentación</a></span>
+                    <span><a style="margin-left: -1em;" href="../html/infoAlimentacion/alimentacion.html">Más información sobre alimentación</a></span>
 
                 </div>
 
                 <div class="variaciones">
                     <img src="../img/analisis.png" title="analisis" alt="analisis de laboratorio" />
-                    <h3>Análisis de laboratorio</h3>
+                    <h4>Análisis de laboratorio</h4>
                     <p>
                         Laboratorio propio para realizar las diferentes analíticas a las mascotas y trabajamos con los mejores laboratorios externos a nivel nacional.
-
                     </p>
                     <span><a href="../html/infoCirujia/cirujia.html">Más información sobre análisis</a></span>
 
@@ -128,8 +145,9 @@
 
 
             </div>
-
         </section>
+
+
 
         <section id="blog">
             <div id="seccion">
@@ -141,34 +159,33 @@
 
             <div class="layout">
                 <div class="articulos">
-                    <img src="../img/slide.jpg" />
+                    <img src="../img/slide.jpg" alt="imagen de perro"/>
                     <h2>Alimentación para tu perro</h2>
                     <p>
                         Preparar platos caseros para nuestro perro es una buena oportunidad para que el animal complete su alimentación seca y pruebe otros sabores. Aprovechando la cuarentena, podemos cocinar comida específica para él y ayudarlo a que se deleite con nuevas texturas.[...]
                     </p>
-                    <span><a href="">Leer más</a></span>
+                    <span><a style="position: absolute; top: 2110px;"  href="">Leer más</a></span>
                 </div>
 
                 <div class="articulos">
-                    <img src="../img/slide3.jpg" />
+                    <img src="../img/slide3.jpg " alt="imagen de gatito" />
                     <h2> Comportamiento y Educación de gatos</h2>
                     <p>El olfato es sumamente importante en los mamíferos. Algunos de ellos, como los perros y los gatos, cuentan con bigotes que son altamente sensibles y tienen una finalidad muy clara: recibir estímulos táctiles.[...]</p>
-                    <span><a href="">Leer más</a></span>
+                    <span><a style="position: absolute; top: 2110px;"  href="">Leer más</a></span>
                 </div>
 
                 <div class="articulos">
-                    <img src="../img/blog3.jpg" />
+                    <img src="../img/blog3.jpg " alt="imagen de perritos corriendo" />
                     <h2>Salir a correr con tu perro</h2>
                     <p>Hacer deporte es saludable; tiene beneficios para la salud física y mental. Y sus efectos se dejan notar en los seres humanos y también en los animales. Un perro que corre o da largos paseos es un perro feliz y sano. Así que ¿por qué
                         no salir a correr con nuestro perro? [...] </p>
-                    <span><a href="">Leer más</a></span>
+                    <span><a style="position: absolute; top: 2110px;"  href="">Leer más</a></span>
                 </div>
 
                 <div>
 
         </section>
 
-        <!--Opiniones de nuestros clientes-->
 
         <section id="opinion">
             <div id="clientes">
@@ -177,13 +194,7 @@
                     nuestras mascotas y clientes.</p>
             </div>
             <div class="layout">
-                <div class="opinion">
-                    <article>
-                        Lleve a mi perro porque consideraba que tenía sobrepeso, pienso que el trato es super profesional. Aman los animales y nos explicaron perfectamente el tratamiento que debian llevar y fueron super resolutivos la verdad que desde ese entonces nuestro perro
-                        siempre va con ellos cada vez que tienen algun problema.
-                    </article>
-                    <p>Juan F. Cabeza</p>
-                </div>
+
                 <div class="opinion">
                     <article>
                         Mi gato se doblo una pata y fueron muy rápidos. Ellos dieron preferencia a curar su herida y tienen gran capacidad para reaccionar a dificiles situaciones. El equipo es muy alegre y esta lleno de jovenes que buscan superarse y seguir aprendiendo con las
@@ -198,6 +209,13 @@
                     </article>
                     <p>Elena Pino</p>
                 </div>
+                <div class="opinion">
+                    <article>
+                        Lleve a mi perro porque consideraba que tenía sobrepeso, pienso que el trato es super profesional. Aman los animales y nos explicaron perfectamente el tratamiento que debian llevar y fueron super resolutivos la verdad que desde ese entonces nuestro perro
+                        siempre va con ellos cada vez que tienen algun problema.
+                    </article>
+                    <p>Juan F. Cabeza</p>
+                </div>
             </div>
             <div id="miboton">
                 <button><a href="">Dejanos aqui tu opinon</a></button>
@@ -205,7 +223,7 @@
 
         </section>
 
-        <!--Pie de la página-->
+        <!-- pie de página-->
         <footer id="pie">
             <div class="layout">
                 <div class="mipie">
@@ -213,30 +231,30 @@
                 </div>
                 <div class="mipie">
                     <h2>datos de contacto</h2>
-                    <p><span><img src="../img/link.png"/><span><a href="">www.animalclinc.es</a></p>
-      <p><span><img src="../img/telefono2.png"/><span>956 87 45 22</p>
-      <p><span><img src="../img/telefono2.png"/><span>693 33 44 32 (Urgencias 24 horas)</p>
-     
+                    <p><span><img src="../img/link.png" alt="icono web"/><span><a href="">www.animalclinc.es</a></p>
+            <p><span><img src="../img/telefono2.png" alt="icono de telefono"/><span>956 87 45 22</p>
+            <p><span><img src="../img/telefono2.png" alt="icono de telefono"/><span>693 33 44 32 (Urgencias 24 horas)</p>
+
+        </div>
+     <div class="mipie">
+        <h2>horario</h2>
+        <p>De <strong>Lunes</strong> a <strong>Viernes:</strong></p>
+        <p> de 9:00 a 21:00</p>
+        <p><strong>Sábados</strong></p>
+        <p>de 9:00 a 14:00</p>
+        <p>Urgencias las 24 horas</p>
+     </div>
+        <div class="mipie">
+        <h2>Información</h2>
+        <p><a href="../html/Newsletter/newsletter.html">Newsletter</a></p>
+        <p><a href="../html/nosotros/nosotros.html">Sobre nosotros</a></p>
+        <p><a href="../html/trabajaNosotros/trabaja.html">Trabaja con nosotros</a></p>
+        </div>
     </div>
-    <div class="mipie">
-      <h2>horario</h2>
-      <p>De <strong>Lunes</strong> a <strong>Viernes:</strong></p>
-      <p> de 9:00 a 21:00</p>
-      <p><strong>Sábados</strong></p>
-      <p>de 9:00 a 14:00</p>
-      <p>Urgencias las 24 horas</p>
-    </div>
-    <div class="mipie">
-      <h2>Información</h2>
-      <p><a href="../html/Newsletter/newsletter.html">Newsletter</a></p>
-      <p><a href="../html/nosotros/nosotros.html">Sobre nosotros</a></p>
-      <p><a href="../html/trabajaNosotros/trabaja.html">Trabaja con nosotros</a></p>
-    </div>
-  </div>
 </footer>
 
-    
-</div>
+
+        </div>
 
 
 
@@ -244,6 +262,12 @@
 
 
 
+<!--BOOSTRAP-->
+<script type="text/javascript " src="../jquery/jquery-3.5.1.min.js "></script>
+<script type="text/javascript " src="../bootstrap/css/bootstrap.min.js "></script>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
