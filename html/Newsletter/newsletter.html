@@ -3,6 +3,7 @@
 <html lang="es">
 
 <head>
+    <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="../../sass/Newsletter/newsletter/news.css" />
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
     <title>Newsletter</title>
@@ -24,10 +25,10 @@
 
             <nav id="menu" class="col-6 ml-4">
                 <ul>
-                    <li><a href="../../html/index.html">inicio</a></li>
-                    <li><a href="#">servicios</a></li>
-                    <li><a href="#">ventas</a></li>
-                    <li><a href="../../html/login/login.html">login</a></li>
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="../servicios/servicios.html">servicios</a></li>
+                    <li><a href="../ventas/ventas.html">ventas</a></li>
+                    <li><a href="../login/login.html">login</a></li>
                 </ul>
             </nav>
 
@@ -53,33 +54,30 @@
             <!-- TRABAJA CON NOSOTROS -->
 
             <form class="pl-5 pb-3">
-                <div class="form-group">
-                    <label for="nombre">Email de acceso:</label>
-                    <input type="text" class="form-control" id="email" name="email" axutofocus>
-                    <small class "form-text text-muted">No ingrese espacios en blanco.</small>
+                    <div class="form-group" >
+                    <label id="labEmail" for="nombre">Email de acceso:</label>
+                    <input  type="text" class="form-control" id="email" name="email" autofocus>
+                    <small class "form-text text-muted">No ingrese espacios en blanco.</small>  
+                    <span class="mr-2" id="validado"></span>  
                 </div>
                 <div class="form-group">
-                    <label for="clave">Contraseña:</label>
+                    <label id="labPassword" for="clave">Contraseña:</label>
                     <input type="password" class="form-control" id="clave" name="clave">
                     <small class "form-text text-muted">Debe tener al menos 10 caracteres, de los cuales al menos uno debe ser un número.</small>
                 </div>
                 <div class="form-group">
-                    <label for="clave">Repetir Contraseña:</label>
-                    <input type="password" class="form-control" id="clave" name="clave">
+                    <label id="labRep" for="clave">Repetir Contraseña:</label>
+                    <input type="password" class="form-control" id="claveP" name="clave">
                     <small class "form-text text-muted">Debe tener al menos 10 caracteres, de los cuales al menos uno debe ser un número.</small>
                 </div>
 
-                <div class="form-group">
+                <div class="nombre form-group">
                     <label for="nombre">Nombre:</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" pattern="/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/" title="Introduzca bien su nombre" />
-
+                    <span class="mr-2" id="validadoNombre"></span>  
                 </div>
 
-                <div class="form-group">
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" class="form-control" id="apellidos" name="apellidos" />
-
-                </div>
+        
 
                 <div class="form-group">
                     <label for="provincia">Provincia:</label>
@@ -89,7 +87,7 @@
 
                 <div class="form-group">
                     <label for="pais">País:</label>
-                    <input type="pais" class="form-control" id="pais" name="pais" />
+                    <input type="text" class="form-control" id="pais" name="pais" />
 
                 </div>
 
@@ -98,23 +96,25 @@
                 <!--Acepto de terminós para poder recibir información de newsletter-->
 
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkbox1" name="checkbox1">
-                    <label class="form-check-label" for="checkbox1">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox1" name="checkbox1" onclick="confirmar();">
+                    <label id="check-one" class="form-check-label" for="checkbox1">
                       Acepto la recepción de newsletter vía email
                     </label>
                 </div>
 
 
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkbox1" name="checkbox1">
-                    <label class="form-check-label" for="checkbox1">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox2" name="checkbox2" onclick="confirmar();">
+                    <label id="check-two" class="form-check-label" for="checkbox1">
                         Al hacer clic en el botón "<span>Crear Cuenta</span>" a continuación, acepta la <a href="#">política de privacidad</a> y el <a href="#">aviso legal</a>
                     </label>
                 </div>
 
 
-                <button type="submit" class="btn btn-success mt-2">Crear cuenta</button>
+                <button type="submit" disabled=false id="boton" class="btn btn-success mt-2">Crear cuenta</button>
             </form>
+              <!--validacion en js -->
+            <script src="../../js/Newsletter/formulario.js"></script>
         </div>
     </section>
 
@@ -127,9 +127,9 @@
             </div>
             <div class="mipie">
                 <h2>datos de contacto</h2>
-                <p><span><img src="../../img/link.png"/><span><a href="">www.animalclinc.es</a></p>
-  <p><span><img src="../../img/telefono2.png"/><span>956 87 45 22</p>
-  <p><span><img src="../../img/telefono2.png"/><span>693 33 44 32 (Urgencias 24 horas)</p>
+                <p><span><img src="../../img/link.png" alt="imagen web"/><span><a href="">www.animalclinc.es</a></p>
+  <p><span><img src="../../img/telefono2.png" alt="imagen telefono"/><span>956 87 45 22</p>
+  <p><span><img src="../../img/telefono2.png" alt="imagen telefono"/><span>693 33 44 32 (Urgencias 24 horas)</p>
  
 </div>
 <div class="mipie">
