@@ -24,10 +24,10 @@
 
             <nav id="menu" class="col-6 ml-4">
                 <ul>
-                    <li><a href="../../html/index.html">inicio</a></li>
-                    <li><a href="#">servicios</a></li>
-                    <li><a href="#">ventas</a></li>
-                    <li><a href="../../html/login/login.html">login</a></li>
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="../servicios/servicios.html">servicios</a></li>
+                    <li><a href="../ventas/ventas.html">ventas</a></li>
+                    <li><a href="../login/login.html">login</a></li>
                 </ul>
             </nav>
 
@@ -48,7 +48,16 @@
         <section class="mt-4 ml-4" id="tienda">
             <!--DIV 1-->
             <div id="tienda_info" class="row">
-                <img src="../../img/tienda1.jpg" class="col-lg-4" title="tienda" />
+                <picture class="col-lg-4">
+                    <source
+                        srcset="../../img/tienda1.jpg,
+                        ../../img/tienda1@1.5x.jpg 1.5x,
+                        ../../img/tienda1@2x.jpg 2x"
+    
+                    />
+                    <img src="../../img/tienda1.jpg" alt="imagen de la alimentación" class=" ml-5 " title="alimentación" />
+                </picture>
+                
                 <div class="informacion  col-lg-6 ">
                     <h3 class="mr-1">tienda</h3>
                     <p class="text-justify mt-3">
@@ -69,13 +78,30 @@
                         por toda la provincia en caso de tener dificultadad. También tenemos pienso para todas las edades
                     </p>
                 </div>
-
-                <img src="../../img/pienso2.jpg" class="col-lg-4 ml-5 " title="alimentación" />
+                <picture class="col-lg-4">
+                    <source
+                        srcset="../../img/pienso2.jpg,
+                        ../../img/pienso2@1.5x.jpg 1.5x,
+                        ../../img/pienso2@2x.jpg 2x"
+    
+                    />
+                    <img src="../../img/pienso2.jpg" alt="imagen de pienso"  class=" ml-5 " title="alimentación" />
+                </picture>
+                    
+               
             </div>
 
             <!-- accesorios -->
             <div id="accesorios" class="row">
-                <img src="../../img/accesorios.jpg" title="accesorios" class="col-lg-4 ml-5" />
+                <picture class="col-lg-4">
+                    <source
+                        srcset="../../img/accesorios.jpg,
+                        ../../img/accesorios@1.5x.jpg 1.5x,
+                        ../../img/accesorios@2x.jpg 2x"
+                    />
+                    <img src="../../img/accesorios.jpg" alt="imagen de accesorios"  class=" ml-5 " title="alimentación" />
+                </picture>
+                
                 <div class="informacion  col-lg-6 ">
                     <h3 class="mr-1 mt-1">accesorios mascotas</h3>
                     <p class="text-justify mt-3">
@@ -94,7 +120,15 @@
 
                     </p>
                 </div>
-                <img src="../../img/higiene.jpg" title="higiene" class="col-lg-4 ml-5" />
+                <picture class="col-lg-4">
+                    <source
+                        srcset="../../img/higiene.jpg,
+                        ../../img/hiegene@1.5x.jpg 1.5x,
+                        ../../img/higiene@2x.jpg 2x"
+                    />
+                    <img src="../../img/higiene.jpg" alt="imagen de higiene animal"  class=" ml-5 " title="alimentación" />
+                </picture>
+                    
             </div>
 
 
@@ -110,9 +144,9 @@
                 </div>
                 <div class="mipie">
                     <h2>datos de contacto</h2>
-                    <p><span><img src="../../img/link.png"/><span><a href="">www.animalclinc.es</a></p>
-                    <p><span><img src="../../img/telefono2.png"/><span>956 87 45 22</p>
-                    <p><span><img src="../../img/telefono2.png"/><span>693 33 44 32 (Urgencias 24 horas)</p>
+                    <p><span><img src="../../img/link.png" alt="imagen de web"/><span><a href="">www.animalclinc.es</a></p>
+                    <p><span><img src="../../img/telefono2.png" alt="imagen de telefono"/><span>956 87 45 22</p>
+                    <p><span><img src="../../img/telefono2.png" alt="imagen de telefono"/><span>693 33 44 32 (Urgencias 24 horas)</p>
 
                 </div>
              <div class="mipie">
@@ -126,7 +160,7 @@
                 <div class="mipie">
                 <h2>Información</h2>
                 <p><a href="../Newsletter/newsletter.html">Newsletter</a></p>
-                <p><a href="">Sobre nosotros</a></p>
+                <p><a href="../nosotros/nosotros.html">Sobre nosotros</a></p>
                 <p><a href="../trabajaNosotros/trabaja.html">Trabaja con nosotros</a></p>
                 </div>
             </div>
