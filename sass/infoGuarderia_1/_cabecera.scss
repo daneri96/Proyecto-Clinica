@@ -56,14 +56,28 @@ header {
 }
 
 //slider
-#slider {
-    .galeria {
-        img {
-            width: 100%;
+#portada {
+    img {
+        height: 400px;
+        width: 1349px;
+    }
+    #info {
+        position: absolute;
+        top: 15em;
+        left: 53em;
+        margin-right: 1em;
+        h1 {
+            color: white;
+        }
+        p {
+            font-size: 1.1em;
+            color: white;
+            text-align: justify;
         }
     }
 }
 
+//maquetación de tablet
 //query para tablet
 @media only screen and(max-width:768px){
     //cabecera
@@ -114,5 +128,26 @@ header {
         }
     }
 }
+#portada {
+    img {
+        height: 400px;
+        width: 1349px;
+    }
+    #info {
+        position: absolute;
+        top: 20em;
+        left: 1em;
+        margin-right: 20em;
+        h1 {
+            color: white;
+        }
+        p {
+            font-size: 1.1em;
+            color: white;
+            text-align: justify;
+        }
+    }
+}
+
 
 }

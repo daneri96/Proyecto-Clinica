@@ -1,11 +1,29 @@
 @import 'variables';
+
+//mixin
+@mixin textoLetra($color, $size-letra) {
+    font-size: $size-letra;
+    color: $color;
+}
+
+//herencias
+%margenes {
+    margin-top: 4em;
+    margin-left: 2em;
+}
+
+%tamanio {
+    height: 272px;
+    width: 407px;
+}
+
 #informacion_cirujia {
     #medicina {
-        margin-top: 4em;
-        margin-left: 2em;
+        @extend %margenes;
         img {
             border-radius: 33%;
             margin-left: 2em;
+            filter:brightness(120%);
         }
     }
     .informacion {
@@ -24,43 +42,138 @@
     }
     //diagnostico
     #diagnostico {
-        margin-top: 4em;
-        margin-left: 2em;
+        @extend %margenes;
         img {
             border-radius: 33%;
-            height: 272px;
-            width: 407px;
+            @extend %tamanio;
+            filter:brightness(120%);
         }
     }
     //urgencias
     #urgencias {
-        margin-top: 4em;
-        margin-left: 2em;
+        @extend %margenes;
         img {
             border-radius: 33%;
-            height: 272px;
-            width: 407px;
+            @extend %tamanio;
+            filter:brightness(120%);
         }
     }
     //hospitalizado
     #hospitalizado {
-        margin-top: 4em;
-        margin-left: 2em;
+        @extend %margenes;
         img {
             border-radius: 33%;
-            height: 272px;
-            width: 407px;
+            @extend %tamanio;
+            filter:brightness(120%);
         }
     }
     //laboratorio
     #laboratorio {
-        margin-top: 4em;
-        margin-left: 2em;
+        @extend %margenes;
         margin-bottom: 3em;
         img {
             border-radius: 33%;
-            height: 272px;
-            width: 407px;
+            @extend %tamanio;
+            filter:brightness(120%);
         }
     }
+}
+
+
+//query para tablet
+@media only screen and(max-width:768px){
+    //cirujia
+//mixin
+@mixin textoLetra($color, $size-letra) {
+    font-size: $size-letra;
+    color: $color;
+}
+#informacion_cirujia {
+    #medicina {
+        margin-right: 2em;
+        @extend %margenes;
+        img {
+            border-radius: 33%;
+            margin-left: 2em;
+            height: 225px;
+            width: 283px;
+            margin-top: 3em;
+        }
+    }
+    .informacion {
+        width: 43%;
+        margin-left: 3em;
+        h3 {
+            font-family: $fuente-texto;
+            color: purple;
+            text-transform: uppercase;
+            border-bottom: 1px solid yellowgreen;
+            margin-right: 4em;
+            padding-bottom: 0.3em;
+            font-size: 1.1em;
+        }
+        p {
+            font-family: $fuente-texto;
+            font-size: 0.9em;
+        }
+    }
+
+     //diagnostico
+     #diagnostico {
+        @extend %margenes;
+        img {
+            border-radius: 33%;
+            //@extend %tamanio;
+            margin-left: 2em;
+            height: 225px;
+            width: 283px;
+            margin-top: 3em;
+        }
+    }
+     //urgencias
+     #urgencias {
+        @extend %margenes;
+        img {
+            border-radius: 33%;
+            //@extend %tamanio;
+            border-radius: 33%;
+            //@extend %tamanio;
+            margin-left: 2em;
+            height: 225px;
+            width: 283px;
+            margin-top: 3em;
+        }
+    }
+    //hospitalizado
+    #hospitalizado {
+        @extend %margenes;
+        img {
+            border-radius: 33%;
+           // @extend %tamanio;
+           border-radius: 33%;
+           //@extend %tamanio;
+           margin-left: 2em;
+           height: 225px;
+           width: 283px;
+           margin-top: 3em;
+        }
+    }
+    //laboratorio
+    #laboratorio {
+        @extend %margenes;
+        margin-bottom: 3em;
+        img {
+            border-radius: 33%;
+            //@extend %tamanio;
+            border-radius: 33%;
+            //@extend %tamanio;
+            margin-left: 2em;
+            height: 225px;
+            width: 283px;
+            margin-top: 3em;
+        }
+    }
+
+}
+
 }

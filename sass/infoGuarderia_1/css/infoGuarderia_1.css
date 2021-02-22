@@ -45,8 +45,23 @@ header #menu ul li a {
   color: #0AC9C9;
 }
 
-#slider .galeria img {
-  width: 100%;
+#portada img {
+  height: 400px;
+  width: 1349px;
+}
+#portada #info {
+  position: absolute;
+  top: 15em;
+  left: 53em;
+  margin-right: 1em;
+}
+#portada #info h1 {
+  color: white;
+}
+#portada #info p {
+  font-size: 1.1em;
+  color: white;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 768px) {
@@ -98,116 +113,65 @@ header #menu ul li a {
     font-size: 1.2em;
     color: #0AC9C9;
   }
-}
-#informacion_cirujia #laboratorio, #informacion_cirujia #hospitalizado, #informacion_cirujia #urgencias, #informacion_cirujia #diagnostico, #informacion_cirujia #medicina {
-  margin-top: 4em;
-  margin-left: 2em;
-}
 
-#informacion_cirujia #laboratorio img, #informacion_cirujia #hospitalizado img, #informacion_cirujia #urgencias img, #informacion_cirujia #diagnostico img {
-  height: 272px;
-  width: 407px;
+  #portada img {
+    height: 400px;
+    width: 1349px;
+  }
+  #portada #info {
+    position: absolute;
+    top: 20em;
+    left: 1em;
+    margin-right: 20em;
+  }
+  #portada #info h1 {
+    color: white;
+  }
+  #portada #info p {
+    font-size: 1.1em;
+    color: white;
+    text-align: justify;
+  }
 }
-
-#informacion_cirujia #medicina img {
-  border-radius: 33%;
-  margin-left: 2em;
-  filter: brightness(120%);
+#articulos {
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-top: 6em;
 }
-#informacion_cirujia .informacion {
-  margin-left: 3em;
+#articulos p {
+  margin-bottom: 2em;
 }
-#informacion_cirujia .informacion h3 {
-  font-family: Verdana, Helvetica, Arial;
-  color: purple;
-  text-transform: uppercase;
-  border-bottom: 1px solid yellowgreen;
-  margin-right: 11em;
-  padding-bottom: 0.3em;
+#articulos #listas {
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-top: 3em;
 }
-#informacion_cirujia .informacion p {
-  font-family: Verdana, Helvetica, Arial;
-}
-#informacion_cirujia #diagnostico img {
-  border-radius: 33%;
-  filter: brightness(120%);
-}
-#informacion_cirujia #urgencias img {
-  border-radius: 33%;
-  filter: brightness(120%);
-}
-#informacion_cirujia #hospitalizado img {
-  border-radius: 33%;
-  filter: brightness(120%);
-}
-#informacion_cirujia #laboratorio {
-  margin-bottom: 3em;
-}
-#informacion_cirujia #laboratorio img {
-  border-radius: 33%;
-  filter: brightness(120%);
+#articulos #listas-criadores {
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-top: 3em;
 }
 
 @media only screen and (max-width: 768px) {
-  #informacion_cirujia #medicina {
-    margin-right: 2em;
+  #articulos {
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-top: 5em;
   }
-  #informacion_cirujia #medicina img {
-    border-radius: 33%;
-    margin-left: 2em;
-    height: 225px;
-    width: 283px;
-    margin-top: 3em;
+  #articulos p {
+    margin-bottom: 2em;
   }
-  #informacion_cirujia .informacion {
-    width: 43%;
-    margin-left: 3em;
+  #articulos h2 {
+    margin-right: 3em;
   }
-  #informacion_cirujia .informacion h3 {
-    font-family: Verdana, Helvetica, Arial;
-    color: purple;
-    text-transform: uppercase;
-    border-bottom: 1px solid yellowgreen;
+  #articulos #listas {
+    margin-left: 5em;
     margin-right: 4em;
-    padding-bottom: 0.3em;
-    font-size: 1.1em;
+    margin-top: 2em;
   }
-  #informacion_cirujia .informacion p {
-    font-family: Verdana, Helvetica, Arial;
-    font-size: 0.9em;
-  }
-  #informacion_cirujia #diagnostico img {
-    border-radius: 33%;
-    margin-left: 2em;
-    height: 225px;
-    width: 283px;
-    margin-top: 3em;
-  }
-  #informacion_cirujia #urgencias img {
-    border-radius: 33%;
-    border-radius: 33%;
-    margin-left: 2em;
-    height: 225px;
-    width: 283px;
-    margin-top: 3em;
-  }
-  #informacion_cirujia #hospitalizado img {
-    border-radius: 33%;
-    border-radius: 33%;
-    margin-left: 2em;
-    height: 225px;
-    width: 283px;
-    margin-top: 3em;
-  }
-  #informacion_cirujia #laboratorio {
-    margin-bottom: 3em;
-  }
-  #informacion_cirujia #laboratorio img {
-    border-radius: 33%;
-    border-radius: 33%;
-    margin-left: 2em;
-    height: 225px;
-    width: 283px;
+  #articulos #listas-criadores {
+    margin-left: 6em;
+    margin-right: 2em;
     margin-top: 3em;
   }
 }
@@ -291,4 +255,4 @@ header #menu ul li a {
   }
 }
 
-/*# sourceMappingURL=cirujia.css.map */
+/*# sourceMappingURL=infoGuarderia_1.css.map */

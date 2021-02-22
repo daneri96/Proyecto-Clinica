@@ -1,14 +1,27 @@
 @import 'variables';
+//herencias
+%margenes {
+    margin-top: 4em;
+    margin-left: 2em;
+}
+
+%tamanio {
+    height: 272px;
+    width: 407px;
+}
+
+%imagen {
+    border-radius: 33%;
+    margin-left: 2em;
+}
+
 //higiene
 #info_pelu {
     #higiene {
-        margin-top: 4em;
-        margin-left: 2em;
+        @extend %margenes;
         img {
-            border-radius: 33%;
-            margin-left: 2em;
-            height: 272px;
-            width: 407px;
+            @extend %imagen;
+            @extend %tamanio;
         }
     }
     //clase informacion
@@ -29,14 +42,64 @@
     }
     //arreglos
     #arreglos {
-        margin-top: 4em;
-        margin-left: 2em;
+        @extend %margenes;
         margin-bottom: 5em;
         img {
-            border-radius: 33%;
-            margin-left: 2em;
-            height: 272px;
-            width: 407px;
+            @extend %imagen;
+            @extend %tamanio;
         }
     }
+}
+
+
+@media only screen and(max-width:768px){
+
+    #info_pelu {
+        #higiene {
+            @extend %margenes;
+            img {
+               // @extend %imagen;
+              //  @extend %tamanio;
+              border-radius: 33%;
+              //@extend %tamanio;
+              margin-left: 2em;
+              height: 225px;
+              width: 283px;
+              margin-top: 5em;
+            }
+        }
+        //clase informacion
+        .informacion {
+            width: 44%;
+            margin-left: 3em;
+            h3 {
+                font-family: $fuente-texto;
+                color: purple;
+                text-transform: uppercase;
+                border-bottom: 1px solid yellowgreen;
+                margin-right: 11em;
+                padding-bottom: 0.3em;
+            }
+            p {
+                font-family: $fuente-texto;
+                font-size: 0.9em;
+            }
+        }
+        //arreglos
+        #arreglos {
+            @extend %margenes;
+            margin-bottom: 5em;
+            img {
+                //@extend %imagen;
+               // @extend %tamanio;
+               border-radius: 33%;
+               //@extend %tamanio;
+               margin-left: 2em;
+               height: 225px;
+               width: 283px;
+               margin-top: 6em;
+            }
+        }
+    }
+
 }

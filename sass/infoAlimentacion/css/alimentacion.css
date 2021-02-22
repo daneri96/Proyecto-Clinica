@@ -49,15 +49,76 @@ header #menu ul li a {
   width: 100%;
 }
 
-#tienda #tienda_info {
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    margin-bottom: -8em;
+  }
+  header #logo {
+    margin-top: 3em;
+    width: 35%;
+  }
+  header #logo img {
+    width: 35%;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 1em;
+    position: relative;
+    bottom: 1.5em;
+  }
+  header #logo p {
+    position: relative;
+    left: 1.8em;
+    bottom: 6.3em;
+    font-family: Verdana, Helvetica, Arial;
+    text-transform: uppercase;
+    padding-right: 1em;
+    font-size: 1.1em;
+    color: #0AC9C9;
+  }
+  header #menu {
+    line-height: 104px;
+    width: 60%;
+    text-align: right;
+    position: relative;
+    right: 0.2em;
+  }
+  header #menu ul {
+    width: 111%;
+  }
+  header #menu ul li {
+    display: inline-block;
+  }
+  header #menu ul li a {
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #0AC9C9;
+  }
+}
+#tienda #higiene, #tienda #accesorios, #tienda #alimento, #tienda #tienda_info {
   margin-top: 4em;
   margin-left: 2em;
 }
-#tienda #tienda_info img {
-  border-radius: 33%;
-  margin-left: 2em;
+
+#tienda #higiene picture img, #tienda #accesorios picture img, #tienda #alimento picture img, #tienda #tienda_info picture img {
   height: 272px;
   width: 407px;
+}
+
+#tienda #higiene picture img, #tienda #accesorios picture img, #tienda #alimento picture img, #tienda #tienda_info picture img {
+  border-radius: 33%;
+  margin-left: 2em;
+}
+
+#tienda #tienda_info picture {
+  width: 46%;
+}
+#tienda #tienda_info picture img {
+  filter: brightness(110%);
 }
 #tienda .informacion {
   margin-left: 3em;
@@ -73,36 +134,80 @@ header #menu ul li a {
 #tienda .informacion p {
   font-family: Verdana, Helvetica, Arial;
 }
-#tienda #alimento {
-  margin-top: 4em;
-  margin-left: 2em;
+#tienda #alimento picture {
+  width: 46%;
 }
-#tienda #alimento img {
-  border-radius: 33%;
-  margin-left: 2em;
-  height: 272px;
-  width: 407px;
+#tienda #alimento picture img {
+  filter: brightness(110%);
 }
-#tienda #accesorios {
-  margin-top: 4em;
-  margin-left: 2em;
-}
-#tienda #accesorios img {
-  border-radius: 33%;
-  margin-left: 2em;
-  height: 272px;
-  width: 407px;
+#tienda #accesorios picture {
+  width: 46%;
 }
 #tienda #higiene {
-  margin-top: 4em;
-  margin-left: 2em;
   margin-bottom: 3em;
 }
-#tienda #higiene img {
-  border-radius: 33%;
-  margin-left: 2em;
-  height: 272px;
-  width: 407px;
+#tienda #higiene picture {
+  width: 46%;
+}
+#tienda #higiene picture img {
+  filter: brightness(110%);
+}
+
+@media only screen and (max-width: 768px) {
+  #tienda #tienda_info img {
+    border-radius: 33%;
+    border-radius: 33%;
+    margin-left: 2em;
+    height: 225px;
+    width: 283px;
+    margin-top: 3em;
+  }
+  #tienda .informacion {
+    width: 43%;
+    margin-left: 3em;
+  }
+  #tienda .informacion h3 {
+    font-family: Verdana, Helvetica, Arial;
+    color: purple;
+    text-transform: uppercase;
+    border-bottom: 1px solid yellowgreen;
+    margin-right: 11em;
+    padding-bottom: 0.3em;
+  }
+  #tienda .informacion p {
+    font-family: Verdana, Helvetica, Arial;
+  }
+  #tienda #alimento img {
+    border-radius: 33%;
+    border-radius: 33%;
+    margin-left: 2em;
+    height: 225px;
+    width: 283px;
+    margin-top: 3em;
+  }
+  #tienda #accesorios img {
+    border-radius: 33%;
+    border-radius: 33%;
+    margin-left: 2em;
+    height: 225px;
+    width: 283px;
+    margin-top: 3em;
+  }
+  #tienda #higiene {
+    margin-bottom: 3em;
+  }
+  #tienda #higiene img {
+    border-radius: 33%;
+    border-radius: 33%;
+    margin-left: 2em;
+    height: 225px;
+    width: 283px;
+    margin-top: 3em;
+  }
+}
+#pie .layout .mipie h2, #pie .layout .mipie #logito {
+  text-transform: uppercase;
+  color: white;
 }
 
 #pie {
@@ -117,15 +222,11 @@ header #menu ul li a {
 }
 #pie .layout .mipie #logito {
   font-size: 2em;
-  text-transform: uppercase;
   font-family: Verdana, Tahoma, sans-serif;
-  color: white;
   text-shadow: 0px 0px 1px white;
   padding-top: 1em;
 }
 #pie .layout .mipie h2 {
-  text-transform: uppercase;
-  color: white;
   border-bottom: 0.1em solid white;
   margin-bottom: 1.1em;
   padding-top: 1em;
@@ -141,6 +242,48 @@ header #menu ul li a {
 #pie .layout .mipie p a {
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  #pie {
+    background-color: #61A60E;
+    margin-top: 0.2em;
+  }
+  #pie .layout {
+    display: flex;
+  }
+  #pie .layout .mipie {
+    margin: 0 auto;
+  }
+  #pie .layout .mipie #logito {
+    display: none !important;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+    text-shadow: 0px 0px 1px white;
+    padding-top: 1em;
+  }
+  #pie .layout .mipie h2 {
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 1.1em;
+    padding-top: 1em;
+    font-size: 1.3em;
+    margin-right: 3.1em;
+  }
+  #pie .layout .mipie p {
+    color: white;
+    margin: 1em;
+  }
+  #pie .layout .mipie p span img {
+    height: 1em;
+    margin-right: 0.4em;
+  }
+  #pie .layout .mipie p a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=alimentacion.css.map */

@@ -63,3 +63,56 @@ header {
         }
     }
 }
+
+//query para tablet
+@media only screen and(max-width:768px){
+    //cabecera
+header {
+    width: 100%;
+    display: flex;
+    background-color: $fondo;
+    margin-bottom: -8em;
+    #logo {
+        margin-top: 3em;
+        width: 35%;
+        img {
+            width: 35%;
+            background-color: white;
+            text-align: center;
+            margin-bottom: 1em;
+            position:relative;
+            bottom:1.5em;
+        }
+        p {
+            position: relative;
+            left: 1.8em;
+            bottom:6.3em;
+            font-family: $fuente-texto;
+            text-transform: uppercase;
+            padding-right: 1em;
+            @include textoLetra($color-cabecera, 1.1em);
+        }
+    }
+    //menu de la cabecera
+    #menu {
+        line-height: 104px;
+        width: 60%;
+        text-align: right;  
+        position:relative;
+        right: 0.2em;
+        ul {
+            width: 111%;
+            li {
+                display: inline-block;
+                a {
+                    text-transform: uppercase;
+                    padding: 10px;
+                    text-decoration: none;
+                    @include textoLetra($color-cabecera, 1.2em);
+                }
+            }
+        }
+    }
+}
+
+}

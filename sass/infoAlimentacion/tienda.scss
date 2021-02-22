@@ -1,16 +1,34 @@
 @import 'variables';
+//herencias
+%margenes {
+    margin-top: 4em;
+    margin-left: 2em;
+}
+
+%tamanio {
+    height: 272px;
+    width: 407px;
+}
+
+%imagen {
+    border-radius: 33%;
+    margin-left: 2em;
+}
+
 //tienda
 #tienda {
     //primera entrada la tienda
     #tienda_info {
-        margin-top: 4em;
-        margin-left: 2em;
-        img {
-            border-radius: 33%;
-            margin-left: 2em;
-            height: 272px;
-            width: 407px;
+        @extend %margenes;
+        picture{
+            width: 46%;
+            img {
+                @extend %imagen;
+                @extend %tamanio;
+                filter: brightness(110%);
+            }
         }
+        
     }
     .informacion {
         margin-left: 3em;
@@ -28,36 +46,134 @@
     }
     //alimentación
     #alimento {
-        margin-top: 4em;
-        margin-left: 2em;
+        @extend %margenes;
+        picture{
+            width: 46%;
+            img {
+                @extend %imagen;
+                @extend %tamanio;
+                filter:brightness(110%);
+            }
+        }
+           
+        
+       
+    }
+    //accesorios
+    #accesorios {
+        @extend %margenes;
+        picture{
+            width: 46%;
+            img {
+                @extend %imagen;
+                @extend %tamanio;
+            }
+        }
+       
+    }
+    //higiene mascotas
+    #higiene {
+        @extend %margenes;
+        margin-bottom: 3em;
+        picture{
+            width: 46%;
+            img {
+                @extend %imagen;
+                @extend %tamanio;
+                filter: brightness(110%);
+            }
+        }
+        
+    }
+}
+
+
+@media only screen and(max-width:768px){
+//tienda
+#tienda {
+    //primera entrada la tienda
+    #tienda_info {
+      //  @extend %margenes;
         img {
+        //    @extend %imagen;
+      //      @extend %tamanio;
             border-radius: 33%;
+            //@extend %tamanio;
+            border-radius: 33%;
+            //@extend %tamanio;
             margin-left: 2em;
-            height: 272px;
-            width: 407px;
+            height: 225px;
+            width: 283px;
+            margin-top: 3em;
+        }
+    }
+    .informacion {
+        width: 43%;
+        margin-left: 3em;
+        h3 {
+            font-family: $fuente-texto;
+            color: purple;
+            text-transform: uppercase;
+            border-bottom: 1px solid yellowgreen;
+            margin-right: 11em;
+            padding-bottom: 0.3em;
+        }
+        p {
+            font-family: $fuente-texto;
+        }
+    }
+    //alimentación
+    #alimento {
+    
+        @extend %margenes;
+        img {
+        //    @extend %imagen;
+       //     @extend %tamanio;
+            border-radius: 33%;
+            //@extend %tamanio;
+            border-radius: 33%;
+            //@extend %tamanio;
+            margin-left: 2em;
+            height: 225px;
+            width: 283px;
+            margin-top: 3em;
         }
     }
     //accesorios
     #accesorios {
-        margin-top: 4em;
-        margin-left: 2em;
+        @extend %margenes;
         img {
+       //     @extend %imagen;
+          //  @extend %tamanio;
             border-radius: 33%;
+            //@extend %tamanio;
+            border-radius: 33%;
+            //@extend %tamanio;
             margin-left: 2em;
-            height: 272px;
-            width: 407px;
+            height: 225px;
+            width: 283px;
+            margin-top: 3em;
         }
     }
     //higiene mascotas
     #higiene {
-        margin-top: 4em;
-        margin-left: 2em;
+        @extend %margenes;
         margin-bottom: 3em;
         img {
+       //     @extend %imagen;
+         //   @extend %tamanio;
             border-radius: 33%;
+            //@extend %tamanio;
+            border-radius: 33%;
+            //@extend %tamanio;
             margin-left: 2em;
-            height: 272px;
-            width: 407px;
+            height: 225px;
+            width: 283px;
+            margin-top: 3em;
         }
     }
+}
+
+
+
 }
